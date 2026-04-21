@@ -1,7 +1,9 @@
 # Troubleshooting
 This page contains FAQ and troubleshooting info for all assignments in the course.
 
-## Problem: When activating the virtual environment, I get the following bug:
+## Problem: running scripts is disabled on this system
+
+When activating the virtual environment, I get the following bug:
 
 ```
 ...cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
