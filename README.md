@@ -1,7 +1,7 @@
 # Troubleshooting
 This page contains FAQ and troubleshooting info for all assignments in the course.
 
-**Problem**: When activating the virtual environment, I get the following bug:
+## Problem: When activating the virtual environment, I get the following bug:
 
 ```
 ...cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
@@ -18,19 +18,19 @@ set-executionpolicy remotesigned
 
 This will allow running unsigned scripts that you write on your local computer and signed scripts from Internet. This will change the policy permanently.
 
-**Problem**: Creating a virtual environment does not work
+## Problem: Creating a virtual environment does not work
 
 In case `python -m venv myenv` does not work, `py -m venv myenv` may work
 
-**Problem**: `pytest` command does not work.
+## Problem: `pytest` command does not work.
 
 You may try: `python -m pytest`.
 
-**Problem** 'python' is not recognized as an internal or external command
+## Problem 'python' is not recognized as an internal or external command
 
 Probably Python is not installed. You can install python via the install manager: [https://www.python.org/downloads/release/pymanager-261/](https://www.python.org/downloads/release/pymanager-261/).
 
-**Problem**: Jupyter Notebook Kernel Not Found
+## Problem: Jupyter Notebook Kernel Not Found
 
 If the cells in the Jupyter notebook do not execute, you may need to specify the Python kernel. Follow these steps:
 
@@ -48,7 +48,7 @@ Mac/Linux
 4. Navigate to the virtual environment you created, select: myenv/bin/python
 5. The notebook will now use the correct Python interpreter from your virtual environment
 
-**Problem**: Repository access issue
+## Problem: Repository access issue
 
 After accepting the assignment invitation link, I want to open my repository, but I get the error shown below.
 
