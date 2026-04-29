@@ -1,6 +1,16 @@
 # Troubleshooting
 This page contains FAQ and troubleshooting info for all assignments in the course.
 
+## Problem (graded programming assignment 1): no matching distribution tensorflow
+
+When installing the requirements for the programming assignments, I get the following error:
+```
+ERROR: Could not find a version that satisfies the requirement tensorflow (from versions: none)
+ERROR: No matching distribution found for tensorflow.
+```
+
+This means you have installed a Python version that is very recent and not yet supported by Tensorflow. Remove your python installation and (or) replace it by an older version (such as 3.11).
+
 ## Problem: running scripts is disabled on this system
 
 When activating the virtual environment, I get the following bug:
