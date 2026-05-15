@@ -1,6 +1,16 @@
 # Troubleshooting
 This page contains FAQ and troubleshooting info for all assignments in the course.
 
+## Problem with Github pipeline
+
+In case, after committing you get an error that states something like:
+
+```bash
+The job was not started because recent account payments have failed or your spending limit needs to be increased
+``` 
+
+Don't worry. In case the pipeline fails, we will clone your code and run pytest locally to determine the grade. This does still require you to push your code and weights to github, so please make sure the last version of the code is available on github!
+
 ## Problem (graded programming assignment 1): no matching distribution tensorflow
 
 When installing the requirements for the programming assignments, I get the following error:
