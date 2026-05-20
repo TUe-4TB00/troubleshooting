@@ -1,6 +1,28 @@
 # Troubleshooting
 This page contains FAQ and troubleshooting info for all assignments in the course.
 
+## Problem Graph-SLAM assignment: RuntimeError: Attempting to add a key-value pair with key "x5", key already exists.
+
+When running the cell below "9.2 Bonus question", you most likely get an error message that states "Attempting to add a key-value pair with key "x5", key already exists". The error is about attempting to add a pose that already exists. To avoid this error, the block below "9.1 Adding pose X(5)" needs to be changed.
+
+Replace this line:
+
+```bash
+best_pose, best_landmark, marginals = minimize_marginals(graph, initial_estimate, pose_options)
+```
+
+By these lines:
+
+```bash
+graph_copy = deepcopy(graph)
+estimate_copy = gtsam.Values(initial_estimate)
+best_pose, best_landmark, marginals = minimize_marginals(
+    graph_copy,
+    estimate_copy,
+    pose_options,
+)
+```
+
 ## Problem with Github pipeline
 
 In case, after committing you get an error that states something like:
